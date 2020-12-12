@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <head>
+        <style>
+            #wrapper {
+  margin-left: 200px;
+}
+#content {
+  float: right;
+  width: 100%;
+}
+#sidebar {
+  float: left;
+  width: 200px;
+  margin-left:-230px;
+  background-color: rgb(152, 193, 240);
+}
+#cleared {
+  clear: both;
+}
+legend {
+    background-color: rgb(10, 21, 34);
+    color: white;
+    padding-left:12px;
+}
+input[type=SUBMIT] {
+  background-color: rgb(10, 21, 34);
+  border: royalblue;
+  color: rgb(231, 238, 248);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration-color: azure;
+  border-radius:0%;
+}
+        </style>
+        </head>
+        <body>
+			
+            <div id="wrapper">
+                <div id="sidebar">
+					<div id = "analytics">
+						 <a href="{{url_for('static', filename='analytics.html')}}"> Analytics </a> 
+						
+					</div>
+					
+                    <ul>
+                        <form>
+                            <legend>POI</legend>
+                            <input style="margin-right: 10px" type="checkbox" id="HV"><label for="myid1" class="check-space">Dr.Harsh Vardhan</label><br>
+                            <input style="margin-right: 10px" type="checkbox"  id="NM"><label for="myid1" class="check-space">Narendra Modi</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="AS"><label for="myid1" class="check-space">Amit shah</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="VP"><label for="myid1" class="check-space">VP Secretariat</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="IPRD"><label for="myid1" class="check-space">IPRD Bihar</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="SC"><label for="myid1" class="check-space">Shivraj Chauhan</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="MKTR"><label for="myid1" class="check-space">Minister KTR</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="MOHFW"><label for="myid1" class="check-space">MOHFW India</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="PMI"><label for="myid1" class="check-space">PMO India</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="DT"><label for="myid1" class="check-space">Donald Trump</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="AA"><label for="myid1" class="check-space">Alex Azar</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="NIH"><label for="myid1" class="check-space">NIH</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="NASA"><label for="myid1" class="check-space">NASA</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="CDC"><label for="myid1" class="check-space">CDC</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="WH"><label for="myid1" class="check-space">White house</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="NIHD"><label for="myid1" class="check-space">NIH Director</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="MS"><label for="myid1" class="check-space">Matteo Salvinimi</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="MB"><label for="myid1" class="check-space">Mibact</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="LG"><label for="myid1" class="check-space">Lui Gidimaio</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="MSA"><label for="myid1" class="check-space">Ministero Salute</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="GM"><label for="myid1" class="check-space">Giorga Meloni</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="VM"><label for="myid1" class="check-space">Viminale</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="GC"><label for="myid1" class="check-space">Giuseppe Conteit</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="RS"><label for="myid1" class="check-space">Robert Speranza</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="RB"><label for="myid1" class="check-space">Roberto Burioni</label><br>
+                          
+                            <legend >Language</legend>
+                            <input style="margin-right: 10px"  type="checkbox" id="EN"><label for="myid1">ENGLISH</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="IT"><label for="myid1">ITALIAN</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="HI"><label for="myid1">HINDI</label><br>
+                            <legend>Country</legend>
+                            <input style="margin-right: 10px" type="checkbox" id="USA"><label for="myid1">USA</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="ITALY"><label for="myid1">ITALY</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="INDIA"><label for="myid1">INDIA</label><br>
+                            <legend>Prominent keywords</legend>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Pandemic</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Lockdown</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">COVID19</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Social Distance</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Mask</label><br>
+                            <input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Safe</label><br>
+							<input style="margin-right: 10px" type="checkbox" id="myid1"><label for="myid1">Government</label><br>
+                            <input style="width:150px;" type="submit" value="SUBMIT">
+                        </form>
+                    </ul>
+                </div>
+                <div id="cleared"></div>
+              </div>
+        
+        </body>
+</body>
+
+
+
+</html>
